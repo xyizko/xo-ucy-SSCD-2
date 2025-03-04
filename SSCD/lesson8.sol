@@ -17,5 +17,15 @@ contract SimpleStorage {
         favNumber = _favNumber;
     }
 
+    // retreive function 
+    function retrieve() public view returns(uint256) {
+        return favNumber;
+    }
+
+    // pure function example
+    function retrieve2() public pure returns(uint256) {
+        //return favNumber; this would not be allowed
+    }
+
 
 }
