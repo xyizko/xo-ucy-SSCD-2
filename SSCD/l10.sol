@@ -46,8 +46,13 @@ contract SimpleStorage {
     // If a number is mentioned then it becomes a static array
     Killa[] public listOfKillaz;
 
+
     function addKillaz(uint256 _number, string memory _weapon )public{
+        
+        _weapon = "Gun";
+        
         listOfKillaz.push(  // push the new entry into the array 
+        
         Killa({
             number:_number,   // passing the values
             weapon : _weapon // from memory to store in the dynamic array 
