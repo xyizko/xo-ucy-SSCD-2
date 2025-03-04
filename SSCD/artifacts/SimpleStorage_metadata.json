@@ -4,7 +4,21 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +47,11 @@
 	},
 	"sources": {
 		"SSCD/lesson8.sol": {
-			"keccak256": "0xccbbb19161dce5519597f7df3fb3dc1466a155d2567046b7978e9f7d41553bc8",
+			"keccak256": "0x85372a9f976f6ada519af308c9e3edc7e74a976ded05b8740565ed8d3ff36282",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0bec718920336626e6e885a39a3d405352b6bdb645fa4ce95dc1ccdb5022a3ff",
-				"dweb:/ipfs/QmXCqCxF2nQXssCex4wcxV8XtC8vmHHnr1nXawoAwERbFb"
+				"bzz-raw://159d777ae4b8b08206177f6652996b92e7f1bea69a4e6bd9d8e65c021495d2c7",
+				"dweb:/ipfs/QmeacdhMpzdeATU7GJ2VBTWggb7nRUzjYs7dXjnq52dHUs"
 			]
 		}
 	},
