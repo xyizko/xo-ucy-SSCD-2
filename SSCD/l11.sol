@@ -68,7 +68,4 @@ contract SimpleStorage {
         nameToWeapon[_weapon] = _number;
     }
 
-
-
-
 }
