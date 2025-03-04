@@ -28,15 +28,31 @@ contract SimpleStorage {
     }
 
     // Defining the custom type - Getter method is being automatically made by compiler
-    Killa public kanz = Killa({
-        number: 69, 
-        weapon: "Sword"
-    });
+    // Note each one of the new custom types will get its own getter function 
 
-    Killa public injz = Killa ({
-        number:20,  
-        weapon:"Gun"
-    })
+    // Killa public kanz = Killa({
+    //     number: 69, 
+    //     weapon: "Sword"
+    // });
 
-    
+    // Killa public injz = Killa ({
+    //     number:20,  
+    //     weapon:"Gun"
+    // });
+
+    // Definintion of the multiple people as an array
+
+    // Dynamic Array 
+    // If a number is mentioned then it becomes a static array
+    Killa[] public listOfKillaz;
+
+    function addKillaz(uint256 _number, string memory _weapon )public{
+        listOfKillaz.push(  // push the new entry into the array 
+        Killa({
+            number:_number,   // passing the values
+            weapon : _weapon // from memory to store in the dynamic array 
+        }));
+    }
+
+
 }
