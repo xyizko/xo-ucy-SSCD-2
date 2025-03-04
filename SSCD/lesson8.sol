@@ -8,10 +8,14 @@
 pragma solidity ^0.8.18 ;
 
 contract SimpleStorage {
+
     // Fav number gets initialized 
     uint256 favNumber = 7;
 
+    // Function for testing numbers
     function store(uint256 _favNumber) public {
         favNumber = _favNumber;
     }
+
+
 }
