@@ -14,7 +14,7 @@ contract SimpleStorage {
     // Custom type
     struct Killa{
         uint256 number;
-        string name;
+        string weapon;
     }
 
     function store(uint256 _favNum) public {
@@ -27,6 +27,16 @@ contract SimpleStorage {
         return  myfavNum ;
     }
 
-    // Defining the custom type 
-    Killa public kanz = Killa(69, "sword");
+    // Defining the custom type - Getter method is being automatically made by compiler
+    Killa public kanz = Killa({
+        number: 69, 
+        weapon: "Sword"
+    });
+
+    Killa public injz = Killa ({
+        number:20,  
+        weapon:"Gun"
+    })
+
+    
 }
